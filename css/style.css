@@ -1,16 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
 
-/* Styles supplémentaires pour améliorer l'apparence du CV */
-
-/* Style pour les lignes de séparation */
-.custom-divider {
+/* Bouton personnalisé avec icône */
+.custom-button {
+  padding: 8px 16px;
+  background-color: #D2691E;
+  color: white;
   border: none;
-  height: 2px;
-  background-color: #333;  /* Ligne noire ou grise foncée */
-  margin: 20px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* Centrer le contenu */
 }
 
-/* Style des titres principaux et sous-titres */
+.custom-button img {
+  margin-right: 8px;
+}
+
+/* Section principale avec fond et ombre */
+.section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center; /* Centrer tout le texte de la section */
+}
+
+.contact-info {
+  text-align: center;
+}
+
+/* Style des titres */
 .cv-title {
   font-family: 'Georgia', serif;
   font-size: 36px;
@@ -18,15 +41,50 @@
   text-align: center;
 }
 
-
 .cv-subtitle {
   font-family: 'Georgia', serif;
   font-size: 24px;
-  color: #666;
-  text-align: left;
+  color: #ca6115;
+  text-align: center;
   border-bottom: 2px solid #444;
   padding-bottom: 5px;
   margin-bottom: 20px;
+}
+
+/* Conteneur pour les compétences */
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: left; /* Aligner le texte des compétences à gauche */
+}
+
+.skills {
+  width: 45%;
+}
+
+.skills p {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ca6115;
+}
+
+.skills ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.skills li {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Ligne de séparation */
+.custom-divider {
+  border: none;
+  height: 2px;
+  background-color: #333;
+  margin: 20px 0;
 }
 
 /* CSS pour la section Vidéo */
@@ -216,6 +274,47 @@ video {
 
 .avis-btn:hover {
   background-color: #FFB347;
+}
+
+.about_section {
+  background: linear-gradient(to right, #FFB347, #D2691E);
+  padding: 60px 0; /* Espacement supérieur et inférieur */
+  color: #ffffff; /* Couleur du texte par défaut */
+}
+
+.detail-box {
+  padding: 50px; /* Augmenter légèrement l'espacement interne pour élargir le cadre */
+  background-color: rgba(255, 255, 255, 0.2); /* Couleur de fond semi-transparente pour le cadre */
+  border-radius: 12px; /* Coins arrondis pour le cadre */
+  border: 2px solid #D2691E; /* Bordure en couleur terre cuite */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre portée pour le cadre */
+}
+
+.heading_container {
+  margin-bottom: 20px; /* Espace sous le titre */
+}
+
+.detail-box h2 {
+  font-size: 2.5em; /* Taille du titre principale */
+}
+
+.detail-box h4 {
+  font-size: 1.8em; /* Taille des sous-titres */
+  margin-top: 20px; /* Espace au-dessus des sous-titres */
+  color: #FFB347; /* Couleur orange pour les questions */
+  font-family: 'Dancing Script', cursive;
+}
+
+.detail-box p {
+  color: #ffffff; /* Couleur du texte */
+  line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+}
+
+.img-box img {
+  width: 100%; /* Remplit la largeur du conteneur */
+  height: auto; /* Ajuste la hauteur automatiquement */
+  border-radius: 8px; /* Coins légèrement arrondis */
+  object-fit: cover; /* Assure le bon cadrage de l’image */
 }
 
 
