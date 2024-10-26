@@ -282,7 +282,7 @@ video {
   color: #ffffff; /* Couleur du texte par défaut */
 }
 
-.detail-box {
+.detail-box-v1 {
   padding: 50px; /* Augmenter légèrement l'espacement interne pour élargir le cadre */
   background-color: rgba(255, 255, 255, 0.2); /* Couleur de fond semi-transparente pour le cadre */
   border-radius: 12px; /* Coins arrondis pour le cadre */
@@ -317,6 +317,22 @@ video {
   object-fit: cover; /* Assure le bon cadrage de l’image */
 }
 
+/* Styles pour le menu déroulant */
+.dropdown-menu.submenu {
+  background-color: #00000083;
+  border-radius: 8px;
+}
+
+/* Style par défaut des liens dans le sous-menu */
+.submenu a {
+  color: white; /* Couleur blanche avant le clic */
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: #FFB347; /* Couleur au survol */
+  color: white;
+}
 
 
 body {
