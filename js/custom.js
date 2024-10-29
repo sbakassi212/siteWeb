@@ -68,3 +68,23 @@ $(".client_owl-carousel").owlCarousel({
         }
     }
 });
+
+// Compteur pour suivre le nombre de clics
+let clickCount = 0;
+
+// Événement de clic pour le lien des recettes
+document.addEventListener('DOMContentLoaded', function() {
+    const recettesLink = document.getElementById('navbarDropdown');
+
+    if (recettesLink) {
+        recettesLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Empêche le comportement par défaut du lien
+
+            clickCount++;
+
+            if (clickCount === 2) {
+                window.location.href = 'recettes.html'; // Redirige vers recettes.html
+            }
+        });
+    }
+});

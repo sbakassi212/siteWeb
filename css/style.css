@@ -102,7 +102,7 @@ body {
    max-width: 900px;
    background-color: rgb(19, 18, 18, 0.95);
    border-radius: 10px;
-   border: 8px solid #be7207f0;
+   border: 8px solid #ffffffbd;
    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -196,7 +196,7 @@ video {
   background-color: rgb(19, 18, 18, 0.95);
   padding: 40px 20px;
   border-radius: 10px;
-  border: 8px solid #be7207f0;
+  border: 8px solid #ffffffbd;
   max-width: 900px;
   margin: 40px auto;
   text-align: center;
@@ -319,18 +319,30 @@ video {
 
 /* Styles pour le menu déroulant */
 .dropdown-menu.submenu {
-  background-color: #00000083;
+  background-color: rgba(0, 0, 0, 0.51); /* Noir transparent */
   border-radius: 8px;
+  padding: 10px;
+  position: absolute;
 }
 
 /* Style par défaut des liens dans le sous-menu */
 .submenu a {
   color: white; /* Couleur blanche avant le clic */
   text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.dropdown-item:hover {
-  background-color: #FFB347; /* Couleur au survol */
+/* Couleur de fond et du texte au survol */
+.submenu a:hover {
+  background-color: #FFB347; /* Couleur orange clair au survol */
+  color: white;
+}
+
+/* Assure que le menu se ferme après clic */
+.submenu a:focus {
+  background-color: #FFB347;
   color: white;
 }
 
