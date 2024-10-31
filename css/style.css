@@ -346,6 +346,63 @@ video {
   color: white;
 }
 
+.Intro {
+  text-align: center;
+}
+.recipes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Espace entre les recettes */
+}
+
+.recipe-item {
+  background-color: whitesmoke; /* Couleur de fond correspondante */
+  border-radius: 15px; /* Bordures arrondies */
+  padding: 15px; /* Espacement interne */
+  max-width: calc(50% - 10px); /* Largeur pour 2 recettes par ligne */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border: 2px solid #D2691E; /* Bordure en terre cuite autour de la recette */
+}
+
+.recipe-item h3 {
+  font-family: 'Dancing Script', cursive;
+  color: #6F4E37;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+.recipe-image {
+  max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur du cadre */
+  height: auto; /* Garder les proportions de l'image */
+  border: 4px solid #6F4E37; /* Couleur de bordure en terre cuite */
+  border-radius: 8px; /* Arrondir les coins de l'image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajouter une ombre pour un effet de profondeur */
+  transition: transform 0.3s; /* Ajoute une transition douce pour l'effet au survol */
+}
+
+.recipe-image:hover {
+  transform: scale(1.05); /* L'image s'agrandit légèrement au survol */
+}
+
+/* Style pour les détails de la recette */
+.recipe-details {
+  margin-top: 10px; /* Espace entre l'image et les détails */
+  border: 1px solid #D2691E; /* Bordure pour le cadre des détails */
+  border-radius: 8px; /* Bordures arrondies pour les détails */
+  padding: 10px; /* Espacement interne pour les détails */
+  background-color: #fafafa; /* Couleur de fond légèrement différente pour les détails */
+}
+
+.description-box, .ingredients-box, .instructions-box {
+  border: 3px solid #6F4E37; /* Couleur du cadre */
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: whitesmoke; /* Couleur de fond douce */
+}
+
+
 
 body {
   font-family: "Open Sans", sans-serif;
