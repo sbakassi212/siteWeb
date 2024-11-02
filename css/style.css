@@ -1409,4 +1409,54 @@ a:focus {
 .footer_section .footer-info p a {
   color: inherit;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #6F4E37; /* Utiliser la couleur de ton site */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #D2691E; /* Une couleur un peu plus foncée pour le hover */
+}
+
+#confirmation-message {
+  display: none; /* Initialement masqué */
+  background-color: rgb(7, 164, 25); /* Fond blanc pour le cadre */
+  border: 1px solid #ccc; /* Bordure grise claire */
+  padding: 10px; /* Espacement à l'intérieur */
+  border-radius: 5px; /* Coins arrondis */
+  margin-top: 20px; /* Marge en haut pour espacer du formulaire */
+  text-align: center; /* Centre le texte à l'intérieur */
+  width: 100%; /* Largeur complète du cadre */
+  max-width: 400px; /* Largeur maximale pour le cadre */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre pour le cadre */
+  position: relative; /* Pour centrer le cadre */
+  left: 50%; /* Position à 50% de la largeur */
+  transform: translateX(-50%); /* Ajuster pour centrer horizontalement */
+  z-index: 1; /* S'assurer que le cadre est au-dessus des autres éléments */
+}
+
+
 /*# sourceMappingURL=style.css.map */
