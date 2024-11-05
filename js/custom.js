@@ -88,3 +88,36 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+
+// gestion du formulaire d'avis 
+document.addEventListener('DOMContentLoaded', function() {
+    const avisForms = document.querySelectorAll('.avis-form');
+  
+    avisForms.forEach(form => {
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Empêche le rechargement de la page
+  
+        const confirmationMessage = form.nextElementSibling; // Sélectionne l'élément de confirmation juste après le formulaire
+  
+        // Envoie le formulaire via fetch (AJAX)
+        fetch(form.action, {
+          method: form.method,
+          body: new FormData(form),
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(response => {
+          if (response.ok) {
+            confirmationMessage.style.display = 'block'; // Affiche le message de confirmation
+            form.reset(); // Réinitialise le formulaire
+          } else {
+            alert("Une erreur est survenue. Merci de réessayer.");
+          }
+        }).catch(error => {
+          alert("Une erreur est survenue. Merci de réessayer.");
+        });
+      });
+    });
+  });
+  

@@ -373,13 +373,15 @@ video {
 }
 
 .recipe-image {
-  max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur du cadre */
-  height: auto; /* Garder les proportions de l'image */
+  width: 200px; /* Largeur fixe pour toutes les images */
+  height: 150px; /* Hauteur fixe pour toutes les images */
+  object-fit: cover; /* S'assure que l'image est coupée pour remplir la zone sans se déformer */
   border: 4px solid #6F4E37; /* Couleur de bordure en terre cuite */
   border-radius: 8px; /* Arrondir les coins de l'image */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajouter une ombre pour un effet de profondeur */
   transition: transform 0.3s; /* Ajoute une transition douce pour l'effet au survol */
 }
+
 
 .recipe-image:hover {
   transform: scale(1.05); /* L'image s'agrandit légèrement au survol */

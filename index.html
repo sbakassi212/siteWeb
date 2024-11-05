@@ -211,10 +211,13 @@
       <div class="col-md-12 footer-col avis-col">
         <h4>Laissez un avis</h4>
         <p>Votre opinion nous intéresse ! Partagez vos impressions sur nos recettes :</p>
-        <form action="https://formspree.io/f/xjkvyadz" method="POST" class="avis-form">
+        <form class="avis-form" action="https://formspree.io/f/xjkvyadz" method="POST">
           <textarea name="avis" rows="3" placeholder="Votre avis..." class="avis-textarea" required></textarea>
           <button type="submit" class="avis-btn">Envoyer</button>
         </form>
+        <div class="avis-confirmation" style="display: none; color: green; margin-top: 10px;">
+          Merci pour votre avis !
+        </div>
       </div>
     </div>
     <div class="footer-info">
